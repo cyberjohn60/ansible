@@ -1,0 +1,8 @@
+- name: updating servers
+  hosts: servers
+  become: true
+  tasks:
+    - name: apt
+      apt:
+        update_cache: yes
+        upgrade: 'yes'
