@@ -1,6 +1,0 @@
-- name: Set timezone and configure timesyncd
-  hosts: servers
-  become: true
-  tasks:
-  - name: set timezone
-    shell: timedatectl set-timezone America/Chicago
